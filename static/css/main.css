@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.preloader {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  z-index: 1000;
+  background-color: #2857b4;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .preloader .logo {
+    font-family: Stolzl, sans-serif;
+    font-size: 84px;
+    color: white;
+    animation: 1.5s liner;
+    animation-name: logo-loader1; }
+
+@keyframes logo-loader1 {
+  0% {
+    transform: translateY(-150vh); }
+  100% {
+    transform: translateY(0vh); } }
+
+.bar {
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  height: 40px;
+  background-color: #2857b4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .bar .bar-logo {
+    font-family: Stolzl, sans-serif;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    margin: 0;
+    margin-left: 40px; }
+  .bar .bar-button {
+    width: 700px;
+    margin-left: 333px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .bar .bar-button .button {
+      font-family: Stolzl, sans-serif;
+      font-size: 12px;
+      color: white;
+      text-decoration: none; }
+      .bar .bar-button .button:hover {
+        text-decoration: underline; }
+
+.header {
+  height: 680px;
+  position: relative; }
+  .header .header-screen {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end; }
+    .header .header-screen .screen1 {
+      margin-left: 307px;
+      margin-top: 50px;
+      width: 100%; }
+    .header .header-screen .screen2 {
+      width: 100%;
+      margin-top: 85px; }
+    .header .header-screen .screen3 {
+      width: 100%;
+      margin-top: 70px; }
+  .header .button {
+    position: absolute;
+    margin: 0;
+    margin-top: 435px;
+    margin-left: 50px;
+    font-family: Stolzl, sans-serif;
+    font-size: 36px;
+    color: #2857b4;
+    text-decoration: none;
+    width: 280px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #2857b4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .button:hover {
+      background-color: #2857b4;
+      color: white; }
+  .header .arrow {
+    position: absolute;
+    margin-top: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1.2s liner infinite;
+    animation-name: arrow; }
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0px); } }
+
+.how-to {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .how-to .header {
+    font-family: Stolzl, sans-serif;
+    font-size: 36px;
+    margin-bottom: 0;
+    height: 36px; }
+  .how-to .how-icons {
+    width: 1200px;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .how-to .how-icons .arrow {
+      width: 140px;
+      height: 106.92px;
+      margin: 0; }
+      .how-to .how-icons .arrow img {
+        width: 100%;
+        height: 100%; }
+      .how-to .how-icons .arrow .img {
+        margin-top: 80px; }
+    .how-to .how-icons .icon {
+      width: 220px;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .how-to .how-icons .icon .icon-img {
+        width: 150px;
+        height: 150px; }
+      .how-to .how-icons .icon .desc {
+        font-family: Stolzl, sans-serif;
+        font-size: 18px;
+        text-align: center; }
+
+.contacts {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacts p {
+    font-family: Stolzl, sans-serif; }
+  .contacts .header {
+    height: 36px;
+    font-size: 36px;
+    margin: 0; }
+  .contacts .desc {
+    font-size: 24px;
+    font-weight: 300; }
+
+.footer {
+  width: 100%;
+  height: 110px;
+  background-color: #2857b4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .footer p {
+    font-family: Stolzl, sans-serif;
+    color: white;
+    margin: 0;
+    margin-left: 40px; }
+  .footer .header {
+    height: 36px;
+    font-size: 36px; }
+  .footer .desc {
+    font-weight: 250;
+    font-size: 16px;
+    margin-top: 15px; }
